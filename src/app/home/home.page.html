@@ -13,7 +13,19 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+  <div>
+    <h3>Welcome to Mobile Apps Starter project 2023.</h3>
+    <ion-button (click)="getGPS()">Get GPS</ion-button>
+    <br>
+    latitude: {{lat}}
+    <br>
+    longitude: {{long}}
+    <br>
+    timestamp: {{time}}
+  </div>
+
+  <div>
+    <h3>(c)</h3>
+    <ion-button (click)="openBrowser()">Open in Browser</ion-button>
   </div>
 </ion-content>
